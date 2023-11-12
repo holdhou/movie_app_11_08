@@ -3,26 +3,27 @@ import { routes } from "./routes";
 import { Home } from "./pages/home/Home";
 import { Detail } from "./pages/detail/Detail";
 import { Search } from "./pages/search/Search";
-import { PageNotFound } from "./pages/PageNotFound";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { PageNotFound } from "./pages/PageNotFound";
+
 const Router = () =>{
-  return (
+  return  (
         <HashRouter>
 
           <Header/>
 
           <Routes>
-            <Route path={routes.home} element={""}/>
-            <Route path={routes.detail} element={""}/>
-            <Route path={routes.search} element={""}/>
-            <Route path="/*" element={""}/>
+            <Route path={routes.home} element={<Home/>}/>
+            <Route path={routes.detail} element={<Detail/>}/>
+            <Route path={routes.search} element={<Search/>}/>
+            <Route path="/*" element={<PageNotFound/>}/>
 
           </Routes>
 
           <Footer/>
           
         </HashRouter>
-    )
-}
+    );
+};
 export default Router;

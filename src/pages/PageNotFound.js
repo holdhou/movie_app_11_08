@@ -1,7 +1,3 @@
-export const PageNotFound =()=>{
-
-    return(
-        <div></div>
-    )
-
+export const PageNotFound= ()=>{
+    return <div>PageNotFound</div>
 }

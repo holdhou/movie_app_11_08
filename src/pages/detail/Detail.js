@@ -1,5 +1,5 @@
 export const Detail =()=>{
     return(
-        <div></div>
+        <div>Detail</div>
     )
 }
